@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to AstonJr's portfolio.">
+    <meta name="AstonJr" content="Devcrud">
+    <title>AstonJr Landing portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Add this in the <head> section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!--<a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="mailto:junioraston354@gmail.com" target="_blank"><i class="fas fa-envelope" ia-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/aston-junior-7ba54a206/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/astopizo.junior"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://twitter.com/AstonJR3" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/_aston.j_/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/astonjr" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Aston Junior</h1>
+                <h6 class="header-mono" >Business Intelligence & RPA Developer</h6>
+                <button class="btn btn-primary btn-rounded" onclick="printResume()"><i class="ti-printer pr-2"></i>Print Resume</button>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Aston Junior</h5>
+                        <div class="brand-subtitle">Business Intelligence & RPA Developer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">A Business Intelligence & RPA Developer Located somewhere in the streets of Nairobi</h5>
+                <p class="mt-20">No need to email to get my CV, just click this button.</p>
+                <a href="assets/files/AstonJunior_CV.pdf" download class="btn btn-outline-danger"><i class="icon-down-circled2"></i> Download My CV</a>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 18/12/2000</li>
+                    <li><span>Email</span> : junioraston254@gmail.com</li>
+                    <li><span>Phone</span> : +254 798 203 170</li>
+                    <li><span>Skype</span> : Aston Junior </li>
+                    <li><span>Address</span> : 00100 Nairobi, Kenya</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="mailto:junioraston354@gmail.com" target="_blank"><i class="fas fa-envelope" ia-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/aston-junior-7ba54a206/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/astopizo.junior"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://twitter.com/AstonJR3" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/_aston.j_/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/astonjr" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="fas fa-chart-pie icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Business Intelligence</h6>
+                        <p class="subtitle"> Qlik Sense, Power BI</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="fas fa-robot icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>RPA Development</h6>
+                        <p class="subtitle">UiPath, Power Automate, Python</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="fas fa-laptop-code icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Software Development</h6>
+                        <p class="subtitle">Java Android, Visual Basic</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="fas fa-code icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Web Development</h6>
+                        <p class="subtitle">HTML, CSS, JAVASCRIPT, PHP</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Experience</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2025 - Present</h6>
+                            <P>Business Intelligence Developer</P>
+                            <P class="subtitle">SYBYL KENYA LIMITED: Business Intelligence Developer.</P>
+                            <hr>
+                            <h6 class="title text-danger">2024 - Present</h6>
+                            <P>RPA Developer</P>
+                            <P class="subtitle">SYBYL KENYA LIMITED: Robotic Process Automation Developer.</P>
+                            <hr>
+                            <h6 class="title text-danger">2024 - 2024</h6>
+                            <P>Software Developer</P>
+                            <P class="subtitle">Freelance: Developed android and POS applications.</P>
+                            <hr>
+                            <h6 class="title text-danger">2020 - 2020</h6>
+                            <P>Web Developer</P>
+                            <P class="subtitle">University: Developed several websites and web apps for school projects.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2021 - 2024</h6>
+                            <P>Degree in Business and Information Technology</P>
+                            <P class="subtitle">Attended ST. Paul's University and attained my Degree in Business and Information Technology on September 2024</P>
+                            <hr>
+                            <h6 class="title text-danger">2018 - 2019</h6>
+                            <P>Diploma in Business and Information Technology</P>
+                            <P class="subtitle">Attended ST. Paul's University and attained my Diploma in Business and Information Technology on September 2019</P>
+                            <hr>
+                            <h6 class="title text-danger">2014 - 2017</h6>
+                            <P>High School Certificate</P>
+                            <P class="subtitle">Attended ST. Ignatius Mukumu Boys High School and attained my KCSE Certificate on November 2017</P>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>Qlik Sense</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>UiPath</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Power BI</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Power Automate</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Java Android</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>SQL</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Swahili</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>French</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Mandarin</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">2</h1>
+                            <p class="text-light mb-1">Years Worked</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="fas fa-folder-open icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">4</h1>
+                            <p class="text-light mb-1">Project Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="fas fa-headset icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">20</h1>
+                            <p class="text-light mb-1">Projects Supported</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="fas fa-grin icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">80</h1>
+                            <p class="text-light mb-1">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">Current</span> Interests</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="fas fa-cogs text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Agentic Automations</h5>
+                            <P class="subtitle">I’m fascinated by <b>Agentic Automations</b>—building AI-driven systems that operate independently, make decisions, and adapt. The idea of creating intelligent agents to automate tasks and optimize processes excites me, pushing the boundaries of efficiency and innovation.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="fas fa-robot text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Machine Learning</h5>
+                            <P class="subtitle">I’m passionate about <b>Machine Learning</b>—teaching computers to learn from data and make intelligent decisions. Exploring <b>algorithms</b>, <b>training models</b>, and solving real-world problems with AI excites me, especially in areas like <b>automation</b> and <b>pattern recognition</b></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="fas fa-cubes text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">3D Modeling</h5>
+                            <P class="subtitle">I’m interested in <b>3D modeling</b>, fascinated by how simple shapes can transform into detailed, lifelike creations. I enjoy experimenting with sculpting, texturing, and animation, constantly learning new techniques to bring my ideas to life in games, animations, and visual effects using tools like <b>Blender</b>.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="fas fa-language text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Linguistics</h5>
+                            <P class="subtitle">I have a strong interest in <b>linguistics</b> and love exploring how languages shape communication and culture. Currently, I’m learning <b>Mandarin</b> and <b>French</b>, fascinated by their unique structures, sounds, and expressions. Mastering new languages challenges me and opens doors to deeper connections with different cultures.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="fa fa-terminal text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Pentesting</h5>
+                            <P class="subtitle">I’m passionate about <b>pentesting</b>, exploring <b>system vulnerabilities</b> to strengthen security. I enjoy learning how hackers think, testing defenses, and finding ways to protect networks and applications. Ethical hacking challenges me to stay sharp and continuously expand my cybersecurity skills.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-game text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Game Development</h5>
+                            <P class="subtitle">I love <b>game development</b>, combining creativity and logic to build immersive experiences. As a <b>Call of Duty Mobile</b> gamer, I’m fascinated by game mechanics, design, and the technology behind smooth, engaging gameplay. Exploring how games are made inspires me to create my own.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal">Ready to Elevate your Team? Let's Create Something amaizing Together!</h2>
+            <a href="mailto:junioraston354@gmail.com" target="_blank"><button class="btn bg-primary w-lg" >Send Email</button></a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">Github</span> Projects</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#" data-filter=".new" class="active">
+                        New
+                    </a>
+                    <a href="#" data-filter=".advertising">
+                        RPA
+                    </a>
+                    <a href="#" data-filter=".branding">
+                        Android
+                    </a>
+                    <a href="#" data-filter=".web">
+                        V.Basic
+                    </a>
+                </div>
+                <div class="portfolio-container"> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                                <div class="text-holder">
+                                    <a  href="https://github.com/astonjr/Restaurant-Point-Of-Sale-Design-in-Visual-Basic" target="_blank"><h6 class="title">Point Of Sale Management System</h6></a>
+                                    <p class="subtitle">Restaurant POS in Vizual Basic</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web-2.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-2.png"></a>
+                                <div class="text-holder">
+                                    <a  href="https://github.com/astonjr/Book-Store-App-in-Visual-Basic" target="_blank"><h6 class="title">Book Store Management System</h6></a>
+                                    <p class="subtitle">Bookstore management system in Vizual Basic</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/advertising-2.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                                <div class="text-holder">
+                                    <a  href="https://github.com/astonjr/Email-Updates-Background-Process-Automation-in-UiPath" target="_blank"><h6 class="title">Email Automation</h6></a>
+                                    <p class="subtitle">Automation to summerise all unread emails.</p>
+                                </div>
+                            </div>    
+                        </div>              
+                    </div> 
+                    
+
+                    <div class="col-md-6 col-lg-4 advertising new"> 
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/advertising-1.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-1.png"></a>
+                                <div class="text-holder">
+                                    <a  href="https://github.com/astonjr/LinkedInAutoCoonect-UiPath-Automation" target="_blank"><h6 class="title">LinkedIn Automation</h6></a>
+                                    <p class="subtitle">LinkedIn automation to automatically create connections managers.</p>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/advertising-3.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                           <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-3.png"></a>
+                                <div class="text-holder">
+                                    <a  href="https://github.com/astonjr/Taxonomy_PDF_Scrapper-UiPath-automation" target="_blank"><h6 class="title">PDF Processing Automation</h6></a>
+                                    <p class="subtitle">Taxonomy PDF Scrapper automation.</p>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    <div class="col-md-6 col-lg-4 advertising new"> 
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
+                                <div class="text-holder">
+                                    <a  href="https://github.com/astonjr/Clear-Cache-background-process-automation-in-UiPath" target="_blank"><h6 class="title">Cache Clearing Automation</h6></a>
+                                    <p class="subtitle">Automation to frequently clear any caches and temporary files.</p>
+                                </div>
+                            </div>
+                        </div>
+                                
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/branding-1.jpeg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
+                                <div class="text-holder">
+                                    <a  href="https://github.com/astonjr/Mobile-App-for-marketing-UX-UI" target="_blank"><h6 class="title">WeezCorp Mobile App</h6></a>
+                                    <p class="subtitle">Mobile app to showcase projects in a visually appealing way.</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                </div> 
+            </div>  
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Leave me a message</h4>                       
+                                <form id="contact-form">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="name" placeholder="Your name *" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" id="email" placeholder="Your email *" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Drop a message and I'll get back to you as soon as posible*" rows="6" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control btn btn-primary">Leave a Message</button>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+254 798 203 170</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">00100 Nairobi, Kenya</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">junioraston254@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="mailto:junioraston354@gmail.com" target="_blank"><i class="fas fa-envelope" ia-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/aston-junior-7ba54a206/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/astopizo.junior"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://twitter.com/AstonJR3" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/_aston.j_/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/astonjr" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created by Aston Junior. 
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+    <!--Print Resume-->
+    <script>
+        function printResume() {
+            const url = "assets/files/AstonJunior_CV.pdf"; // Path to your CV file
+            const printWindow = window.open(url, "_blank");
+            printWindow.onload = function () {
+                printWindow.print();
+            };
+        }
+    </script>
+
+<script type="module">
+   
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+    
+    const firebaseConfig = {
+        apiKey: "AIzaSyCuoA-VEuojPv5rYtviH4HXKiy62pswVSE",
+        authDomain: "aj-portfolio-e4321.firebaseapp.com",
+        projectId: "aj-portfolio-e4321",
+        storageBucket: "aj-portfolio-e4321.firebasestorage.app",
+        messagingSenderId: "309241901130",
+        appId: "1:309241901130:web:45f88675aaa7a1e0d4f6b3",
+        measurementId: "G-K5C6QB4MNR"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    
+    document.getElementById("contact-form").addEventListener("submit", async function (e) {
+        e.preventDefault();
+        console.log("Form submitted!");
+    
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+    
+        console.log("Form data:", { name, email, message });
+    
+        try {
+            // Use Firestore v9 syntax to add a document
+            await addDoc(collection(db, "messages"), {
+                name: name,
+                email: email,
+                message: message,
+                timestamp: new Date()
+            });
+            console.log("Message saved successfully!");
+            alert("I have received your message 😁!");
+            document.getElementById("contact-form").reset();
+        } catch (error) {
+            console.error("Error saving message: ", error);
+            alert("Failed to leave message. Please try again.");
+        }
+    });
+    </script>
+
+</body>
+</html>
